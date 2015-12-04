@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/andy/Code/General CAD Projects/Neurobot/Hardware/Neurobot.sch</source>
+    <date>Fri 04 Dec 2015 04:04:56 PM EST</date>
+    <tool>Eeschema (2015-11-19 BZR 6326, Git 08d9b36)-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Neurobot.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>Maxim_1555</value>
+      <footprint>Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5</footprint>
+      <libsource lib="maxim_1555" part="Maxim_1555"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650E982</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>ATTINY85-S</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="atmel" part="ATTINY85-S"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650E9BF</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>USB_OTG</value>
+      <footprint>Connect:USB_Mini-B</footprint>
+      <libsource lib="conn" part="USB_OTG"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650EA4E</tstamp>
+    </comp>
+    <comp ref="1uF1">
+      <value>C</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650EBA0</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>Led_Small</value>
+      <footprint>Diodes_SMD:SMB_Standard</footprint>
+      <libsource lib="device" part="Led_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650EF83</tstamp>
+    </comp>
+    <comp ref="100K1">
+      <value>R</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650F154</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>JST-PH2</value>
+      <footprint>jst-ph:jst-ph-JST-PH2</footprint>
+      <libsource lib="jst-ph" part="JST-PH2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650F080</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NPN_BCE</value>
+      <footprint>Housings_TO-92:TO-92_Inline_Narrow_Oval</footprint>
+      <libsource lib="device" part="Q_NPN_BCE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650F356</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>Q_NPN_BCE</value>
+      <footprint>Housings_TO-92:TO-92_Inline_Narrow_Oval</footprint>
+      <libsource lib="device" part="Q_NPN_BCE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650F48B</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_EVPBF</footprint>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650F657</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650F76C</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5650FB46</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="atmel" part="ATTINY25-S">
+      <aliases>
+        <alias>ATTINY45-S</alias>
+        <alias>ATTINY85-S</alias>
+      </aliases>
+      <description>SO8 Wide, 2k Flash, 128B SRAM, 128B EEPROM, Debug Wire</description>
+      <docs>http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATTINY25-S</field>
+        <field name="Footprint">SO8-200</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB5(~RESET~/dW/ADC0/PCINT5)" type="BiDi"/>
+        <pin num="2" name="PB3(XTAL1/CLKI/OC1B/ADC3/PCINT3)" type="BiDi"/>
+        <pin num="3" name="PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4)" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)" type="BiDi"/>
+        <pin num="6" name="PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)" type="BiDi"/>
+        <pin num="7" name="PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2)" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X04">
+      <description>Connector 01x04</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="jst-ph" part="JST-PH2">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">JST-PH2</field>
+        <field name="Footprint">jst-ph-JST-PH2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Led_Small">
+      <description>Led</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Led_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="maxim_1555" part="Maxim_1555">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Maxim_1555</field>
+      </fields>
+      <pins>
+        <pin num="1" name="USB" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="CHG" type="output"/>
+        <pin num="4" name="DC" type="power_in"/>
+        <pin num="5" name="BAT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_NPN_BCE">
+      <description>Transistor NPN (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN_BCE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="SW_PUSH">
+      <description>Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_OTG">
+      <description>micro/mini connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_OTG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/local/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/local/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="atmel">
+      <uri>/usr/local/share/kicad/library/atmel.lib</uri>
+    </library>
+    <library logical="maxim_1555">
+      <uri>/home/andy/Code/General CAD Projects/Neurobot/Hardware/maxim_1555.lib</uri>
+    </library>
+    <library logical="jst-ph">
+      <uri>/home/andy/Code/General CAD Projects/Neurobot/Hardware/jst-ph.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(IC1-Pad6)">
+      <node ref="IC1" pin="6"/>
+      <node ref="P1" pin="3"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="2" name="VCC">
+      <node ref="Q2" pin="2"/>
+      <node ref="U1" pin="5"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="IC1" pin="8"/>
+      <node ref="P3" pin="1"/>
+      <node ref="P4" pin="1"/>
+      <node ref="1uF1" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="3" name="Net-(IC1-Pad5)">
+      <node ref="P3" pin="3"/>
+      <node ref="IC1" pin="5"/>
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="4" name="Net-(IC1-Pad1)">
+      <node ref="IC1" pin="1"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="U1" pin="2"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="P4" pin="2"/>
+      <node ref="P3" pin="5"/>
+      <node ref="D1" pin="1"/>
+      <node ref="P3" pin="6"/>
+      <node ref="P1" pin="1"/>
+      <node ref="P2" pin="2"/>
+      <node ref="P2" pin="4"/>
+      <node ref="1uF1" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="6" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(P2-Pad1)">
+      <node ref="P2" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="8" name="Net-(IC1-Pad2)">
+      <node ref="Q2" pin="1"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(P2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="P2" pin="3"/>
+    </net>
+    <net code="10" name="Net-(IC1-Pad7)">
+      <node ref="P1" pin="2"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="11" name="Net-(P3-Pad4)">
+      <node ref="P3" pin="4"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="13" name="Net-(100K1-Pad1)">
+      <node ref="100K1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="14" name="Net-(100K1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="100K1" pin="2"/>
+    </net>
+  </nets>
+</export>
